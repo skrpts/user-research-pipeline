@@ -1,0 +1,38 @@
+name: "user-research-pipeline"
+display_name: "User Research Pipeline"
+description: "Plan and synthesise user interviews, surveys, and feedback into actionable insights"
+version: "1.0.0"
+engine: ">=1.0.0"
+
+author:
+  name: "skrptiq"
+  url: "https://hub.skrptiq.ai"
+licence: "MIT"
+repository: "https://github.com/skrpts/user-research-pipeline"
+
+category: "product-manager"
+tags:
+  - "user-research"
+  - "interviews"
+  - "surveys"
+  - "insights"
+  - "product-management"
+
+requires:
+  services:
+    - "anthropic-claude"
+  permissions: []
+  data_handling:
+    - "user-feedback"
+    - "interview-transcripts"
+    - "survey-responses"
+
+contents:
+  skills: 3
+  prompts: 5
+  workflows: 1
+  services: 1
+  sources: 1
+  documents: 2
+  assets: 2
+  total: 15

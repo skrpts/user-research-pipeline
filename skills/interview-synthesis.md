@@ -5,7 +5,7 @@ title: Interview Synthesis
 description: "Synthesising qualitative interview data into structured insights through thematic coding and pattern recognition"
 tags: [Production, Tested]
 connections:
-  - target: claude-service
+  - target: llm-service
     type: runs_on
   - target: user-research-methods
     type: references

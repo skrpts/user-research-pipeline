@@ -20,7 +20,7 @@ tags:
 
 requires:
   services:
-    - "anthropic-claude"
+    []
   permissions: []
   data_handling:
     - "user-feedback"

@@ -5,7 +5,7 @@ title: Survey Design
 description: "Designing effective surveys with proper question structure, response scales, and bias mitigation"
 tags: [Production, Tested]
 connections:
-  - target: claude-service
+  - target: llm-service
     type: runs_on
   - target: user-research-methods
     type: references

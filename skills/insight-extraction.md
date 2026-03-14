@@ -5,7 +5,7 @@ title: Insight Extraction
 description: "Extracting and prioritising actionable insights from qualitative and quantitative research data"
 tags: [Production, Tested]
 connections:
-  - target: claude-service
+  - target: llm-service
     type: runs_on
   - target: user-research-methods
     type: references

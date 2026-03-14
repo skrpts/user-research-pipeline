@@ -21,7 +21,7 @@ connections:
     type: uses
   - target: insight-report-prompt
     type: uses
-  - target: claude-service
+  - target: llm-service
     type: runs_on
   - target: user-research-methods
     type: references
@@ -118,3 +118,46 @@ This stage branches based on the chosen methodology:
 - **Contradictory findings:** When interview and survey data conflict, present both perspectives. Recommend follow-up research to resolve the contradiction.
 - **Scope creep:** If analysis reveals important themes outside the original research objectives, note them in a separate "Emergent Findings" section rather than expanding the scope.
 - **Sensitive data:** Follow the research-ethics-guide for handling personally identifiable information. Anonymise all quotes and data points in the final report.
+
+## Inputs
+
+| Name | Required | Description | Example |
+|------|----------|-------------|---------|
+| `{{input.research_questions}}` | Yes | The research question(s) to investigate | "How do users discover new features after onboarding?" |
+| `{{input.product_context}}` | Yes | Background on the product and its current state | "B2B project management tool, 6 months post-launch" |
+| `{{input.target_segments}}` | Yes | User segments to include in research | "Power users (daily), casual users (weekly), churned users" |
+| `{{input.transcripts}}` | No | Interview transcripts and/or survey responses to analyse | Paste raw transcripts or survey CSV data |
+
+## Outputs
+
+| Name | Description |
+|------|-------------|
+| Research plan | Structured plan covering methodology, timeline, and participant criteria |
+| Interview guide / survey | Ready-to-use interview script or survey questions tailored to research goals |
+| Thematic analysis | Coded themes with supporting evidence from transcripts and responses |
+| Insight report | Final report with key findings, recommendations, and anonymised supporting quotes |
+
+## Setup
+
+Before running this workflow:
+
+1. **Prepare your research materials** — have transcripts, survey responses, or both ready to paste into the pipeline
+
+No specific AI provider or API key is required beyond your configured skrptiq LLM provider.
+
+## Provider Notes
+
+- Transcript analysis is the most token-intensive stage — benefits from a model with a large context window
+- For multiple long transcripts, consider processing them one at a time rather than all at once
+- Thematic coding quality improves with models that can hold the full dataset in context
+
+## Example Input
+
+To test this workflow immediately after import:
+
+```
+Research questions: How do first-time users decide whether to continue using the product after their first session?
+Product context: A personal finance tracking app, launched 3 months ago, seeing 40% drop-off after day 1.
+Target segments: New users who completed onboarding, new users who abandoned onboarding
+Transcripts: [Paste 2-3 interview transcripts or a set of survey responses here]
+```

@@ -19,8 +19,7 @@ tags:
   - "product-management"
 
 requires:
-  services:
-    []
+  services: []
   permissions: []
   data_handling:
     - "user-feedback"

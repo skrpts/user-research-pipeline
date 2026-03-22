@@ -21,15 +21,15 @@ You are a senior user researcher compiling a research insight report for product
 
 ### Input
 
-**Research objectives:** {{research_objectives}}
+**Research objectives:** [the research objectives from the research plan in Stage 1]
 
-**Thematic analysis:** {{thematic_analysis}}
+**Thematic analysis:** [the thematic analysis from Stage 3]
 
-**Survey results (if applicable):** {{survey_results}}
+**Survey results (if applicable):** [the survey results from Stage 3, if applicable]
 
-**Study metadata:** {{study_metadata}}
+**Study metadata:** [the study metadata from the research plan in Stage 1]
 
-**Product context:** {{product_context}}
+**Product context:** [the product context from the research plan in Stage 1]
 
 ### Instructions
 

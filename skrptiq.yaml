@@ -1,7 +1,7 @@
 name: "user-research-pipeline"
 display_name: "User Research Pipeline"
 description: "Plan and synthesise user interviews, surveys, and feedback into actionable insights"
-version: "1.0.0"
+version: "1.2.0"
 engine: ">=1.0.0"
 
 author:

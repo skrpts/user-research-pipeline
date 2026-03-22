@@ -21,13 +21,13 @@ You are a qualitative researcher conducting thematic analysis on interview trans
 
 ### Input
 
-**Interview transcripts:** {{transcripts}}
+**Interview transcripts:** {{input.transcripts}}
 
-**Research objectives:** {{research_objectives}}
+**Research objectives:** [the research objectives from the research plan in Stage 1]
 
-**Number of interviews:** {{interview_count}}
+**Number of interviews:** {{input.interview_count}}
 
-**Participant descriptions:** {{participant_descriptions}}
+**Participant descriptions:** {{input.participant_descriptions}}
 
 ### Instructions
 

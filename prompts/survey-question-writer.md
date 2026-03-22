@@ -21,15 +21,15 @@ You are a survey methodologist designing a questionnaire that will produce relia
 
 ### Input
 
-**Research objectives:** {{research_objectives}}
+**Research objectives:** [the research objectives from the research plan in Stage 1]
 
-**Target respondents:** {{target_respondents}}
+**Target respondents:** [the participant criteria and target segments from the research plan in Stage 1]
 
-**Survey type:** {{survey_type}}
+**Survey type:** {{input.survey_type}}
 
-**Maximum completion time:** {{max_completion_time}}
+**Maximum completion time:** {{input.max_completion_time}}
 
-**Key hypotheses to test (optional):** {{hypotheses}}
+**Key hypotheses to test (optional):** {{input.hypotheses}}
 
 ### Instructions
 

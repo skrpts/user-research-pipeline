@@ -48,7 +48,7 @@ This workflow guides you from a research question through to actionable insights
 **Input:** A research question or set of questions, product context, and target user segments.
 
 1. Invoke the **research-plan-generator** prompt.
-2. The prompt produces a comprehensive research plan covering:
+2. The prompt produces a structured research plan covering:
    - Research objectives (what you want to learn)
    - Methodology selection (interviews, surveys, or both — with justification)
    - Participant criteria (who to recruit, how many, screening questions)
@@ -123,10 +123,19 @@ This stage branches based on the chosen methodology:
 
 | Name | Required | Description | Example |
 |------|----------|-------------|---------|
-| `{{input.research_questions}}` | Yes | The research question(s) to investigate | "How do users discover new features after onboarding?" |
-| `{{input.product_context}}` | Yes | Background on the product and its current state | "B2B project management tool, 6 months post-launch" |
-| `{{input.target_segments}}` | Yes | User segments to include in research | "Power users (daily), casual users (weekly), churned users" |
-| `{{input.transcripts}}` | No | Interview transcripts and/or survey responses to analyse | Paste raw transcripts or survey CSV data |
+| `{{input.research_questions}}` | Yes | The research question(s) to investigate | `How do users discover new features after onboarding?` |
+| `{{input.product_context}}` | Yes | Background on the product and its current state | `B2B project management tool, 6 months post-launch` |
+| `{{input.target_segments}}` | Yes | User segments to include in research | `Power users (daily), casual users (weekly), churned users` |
+| `{{input.transcripts}}` | No | Interview transcripts and/or survey responses to analyse | `Paste raw transcripts or survey CSV data` |
+| `{{input.resources}}` | No | Available resources for the research | `1 researcher, 2 weeks, access to UserTesting panel` |
+| `{{input.timeline}}` | No | Timeline constraints | `Must be completed within 3 weeks` |
+| `{{input.interview_duration}}` | No | Duration for each interview | `45 minutes` |
+| `{{input.focus_areas}}` | No | Specific areas to explore in interviews | `Onboarding experience, feature discovery` |
+| `{{input.survey_type}}` | No | Type of survey to create | `Exploratory` |
+| `{{input.max_completion_time}}` | No | Maximum survey completion time | `8 minutes` |
+| `{{input.hypotheses}}` | No | Key hypotheses to test in the survey | `Users who complete onboarding are 2x more likely to return` |
+| `{{input.interview_count}}` | No | Number of interviews conducted | `8` |
+| `{{input.participant_descriptions}}` | No | Descriptions of interview participants | `P1: Product manager, daily user. P2: Designer, weekly user.` |
 
 ## Outputs
 

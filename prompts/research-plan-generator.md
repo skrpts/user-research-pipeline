@@ -2,7 +2,7 @@
 type: prompt
 id: research-plan-generator
 title: Research Plan Generator
-description: "Generate a comprehensive user research plan with objectives, methodology, participant criteria, and timeline"
+description: "Generate a structured user research plan with objectives, methodology, participant criteria, and timeline"
 tags: [Production]
 connections:
   - target: survey-design
@@ -21,19 +21,19 @@ You are a senior user researcher designing a research study. Your plan must be r
 
 ### Input
 
-**Research question(s):** {{research_questions}}
+**Research question(s):** {{input.research_questions}}
 
-**Product context:** {{product_context}}
+**Product context:** {{input.product_context}}
 
-**Target user segments:** {{target_users}}
+**Target user segments:** {{input.target_segments}}
 
-**Available resources:** {{resources}}
+**Available resources:** {{input.resources}}
 
-**Timeline constraints:** {{timeline}}
+**Timeline constraints:** {{input.timeline}}
 
 ### Instructions
 
-Design a comprehensive research plan that will reliably answer the research questions provided. Work through each section systematically.
+Design a thorough research plan that will reliably answer the research questions provided. Work through each section systematically.
 
 **1. Research Objectives**
 

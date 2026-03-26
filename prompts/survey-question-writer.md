@@ -21,9 +21,11 @@ You are a survey methodologist designing a questionnaire that will produce relia
 
 ### Input
 
-**Research objectives:** [the research objectives from the research plan in Stage 1]
+**Research plan:** {{steps.research-plan-generator.output}}
 
-**Target respondents:** [the participant criteria and target segments from the research plan in Stage 1]
+**Research objectives:** Drawn from the research plan above.
+
+**Target respondents:** Drawn from the participant criteria and target segments in the research plan above.
 
 **Survey type:** {{input.survey_type}}
 

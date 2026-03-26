@@ -23,7 +23,7 @@ You are a qualitative researcher conducting thematic analysis on interview trans
 
 **Interview transcripts:** {{input.transcripts}}
 
-**Research objectives:** [the research objectives from the research plan in Stage 1]
+**Research objectives:** Drawn from the research plan: {{steps.research-plan-generator.output}}
 
 **Number of interviews:** {{input.interview_count}}
 

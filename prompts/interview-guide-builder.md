@@ -21,13 +21,15 @@ You are an experienced user researcher creating an interview guide for a semi-st
 
 ### Input
 
-**Research objectives:** [the research objectives from the research plan in Stage 1]
+**Research plan:** {{steps.research-plan-generator.output}}
 
-**Participant profile:** [the participant criteria and target segments from the research plan in Stage 1]
+**Research objectives:** Drawn from the research plan above.
+
+**Participant profile:** Drawn from the participant criteria and target segments in the research plan above.
 
 **Interview duration:** {{input.interview_duration}}
 
-**Product context:** [the product context from the research plan in Stage 1]
+**Product context:** {{input.product_context}}
 
 **Specific areas to explore (optional):** {{input.focus_areas}}
 

@@ -21,15 +21,17 @@ You are a senior user researcher compiling a research insight report for product
 
 ### Input
 
-**Research objectives:** [the research objectives from the research plan in Stage 1]
+**Research plan:** {{steps.research-plan-generator.output}}
 
-**Thematic analysis:** [the thematic analysis from Stage 3]
+**Research objectives:** Drawn from the research plan above.
 
-**Survey results (if applicable):** [the survey results from Stage 3, if applicable]
+**Thematic analysis:** {{steps.transcript-analyser.output}}
 
-**Study metadata:** [the study metadata from the research plan in Stage 1]
+**Survey results (if applicable):** Included in the thematic analysis above, if applicable.
 
-**Product context:** [the product context from the research plan in Stage 1]
+**Study metadata:** Drawn from the research plan above.
+
+**Product context:** {{input.product_context}}
 
 ### Instructions
 

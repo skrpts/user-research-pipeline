@@ -19,9 +19,11 @@ tags:
   - "product-management"
 
 requires:
-  services: []
+  services:
+    - "llm-service"
   permissions: []
   data_handling:
+    - "pii"
     - "user-feedback"
     - "interview-transcripts"
     - "survey-responses"

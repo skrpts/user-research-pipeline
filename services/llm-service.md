@@ -2,25 +2,30 @@
 type: service
 id: llm-service
 title: LLM Service
-description: "Language model service providing research planning, analysis, and synthesis capabilities"
-tags: [Production]
+description: "Language model service for analysis, synthesis, and document generation"
+tags: [Production, Tested]
 connections: []
 metadata:
   serviceType: llm
   auth_type: api_key
 ---
 
-## Service Description
+## LLM Service
 
-Provides access to a large language model for research planning, instrument design, data analysis, and insight synthesis. Used by all skills in this skrpt.
+This skrpt uses a language model for all analytical and generative tasks within the pipeline. The LLM handles structured analysis, content synthesis, document generation, and quality validation across each stage.
 
-## Configuration
+### Usage Pattern
 
-The LLM provider is configured in the skrptiq app settings. This skrpt works with any supported provider — no specific vendor is required.
+The LLM is invoked at each stage of the pipeline. Earlier stages produce structured analysis (frameworks, assessments, breakdowns), while later stages synthesise outputs into coherent documents. The final assembly stage is the most token-intensive, requiring cross-referencing across all previous outputs.
 
-## Usage Notes
+### Configuration
 
-- All requests include a system prompt tailored to the specific skill being invoked
-- Transcript analysis is the most token-intensive stage and may benefit from a model with a large context window
-- The service does not retain any data from requests — all analysis is stateless
-- Users should ensure their provider's usage terms permit processing of the data types in their study
+- **Temperature:** 0.3 for structured analysis tasks, 0.5 for narrative and synthesis tasks
+- **Max tokens:** 4000 per invocation, 8000–10000 for final assembly stages
+- **Context window:** The full pipeline accumulates context. Each stage receives the outputs of all previous stages. The assembly stage requires the full context window.
+
+### Requirements
+
+- A configured LLM provider in skrptiq settings
+- Sufficient token quota for the full pipeline
+- No external network access required beyond your AI provider's endpoint

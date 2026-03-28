@@ -21,6 +21,8 @@ connections:
     type: uses
   - target: insight-report-prompt
     type: uses
+  - target: data-analysis
+    type: uses
   - target: llm-service
     type: runs_on
   - target: user-research-methods

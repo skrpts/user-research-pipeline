@@ -3,7 +3,7 @@ type: prompt
 id: research-plan-generator
 title: Research Plan Generator
 description: "Generate a structured user research plan with objectives, methodology, participant criteria, and timeline"
-tags: [Production, planning:research, design:research]
+tags: [Production, Research, Audience]
 connections:
   - target: survey-design
     type: derived_from

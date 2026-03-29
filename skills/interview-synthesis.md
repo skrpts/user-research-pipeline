@@ -3,7 +3,7 @@ type: skill
 id: interview-synthesis
 title: Interview Synthesis
 description: "Synthesising qualitative interview data into structured insights through thematic coding and pattern recognition"
-tags: [Production, Tested, analysis:qualitative, data:qualitative]
+tags: [Production, Tested, Data, Research]
 connections:
   - target: llm-service
     type: runs_on

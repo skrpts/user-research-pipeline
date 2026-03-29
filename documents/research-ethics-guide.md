@@ -3,7 +3,7 @@ type: document
 id: research-ethics-guide
 title: Research Ethics Guide
 description: "Ethical guidelines for conducting user research, covering consent, privacy, data handling, and participant welfare"
-tags: [Production, Customer-Facing, research:ethics, design:research]
+tags: [Production, Customer-Facing, Research, Audience]
 connections:
   - target: user-research-methods
     type: references

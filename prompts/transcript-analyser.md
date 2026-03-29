@@ -3,7 +3,7 @@ type: prompt
 id: transcript-analyser
 title: Transcript Analyser
 description: "Analyse interview transcripts for themes, patterns, sentiment, and actionable observations"
-tags: [Production, analysis:qualitative, data:qualitative]
+tags: [Production, Data, Research]
 connections:
   - target: interview-synthesis
     type: derived_from

@@ -3,7 +3,7 @@ type: workflow
 id: user-research-pipeline
 title: User Research Pipeline
 description: "End-to-end workflow for planning, conducting, and synthesising user research into actionable insights"
-tags: [Production, Tested, design:research, analysis:audience]
+tags: [Production, Tested, Research, Audience]
 connections:
   - target: interview-synthesis
     type: uses

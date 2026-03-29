@@ -3,7 +3,7 @@ type: document
 id: research-repository-guide
 title: Research Repository Guide
 description: "How to maintain a research repository for ongoing reference, avoiding repeated studies and building institutional knowledge"
-tags: [Production, Customer-Facing]
+tags: [Production, Customer-Facing, design:research, analysis:audience]
 connections:
   - target: user-research-methods
     type: references

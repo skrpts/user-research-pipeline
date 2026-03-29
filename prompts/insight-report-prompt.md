@@ -3,7 +3,7 @@ type: prompt
 id: insight-report-prompt
 title: Insight Report Generator
 description: "Compile research findings into a structured insight report with evidence, confidence levels, and recommendations"
-tags: [Production]
+tags: [Production, design:research, analysis:audience]
 connections:
   - target: insight-extraction
     type: derived_from

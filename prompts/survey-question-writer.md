@@ -3,7 +3,7 @@ type: prompt
 id: survey-question-writer
 title: Survey Question Writer
 description: "Write survey questions with proper response scales, bias mitigation, and logical flow"
-tags: [Production]
+tags: [Production, design:research, analysis:audience]
 connections:
   - target: survey-design
     type: derived_from

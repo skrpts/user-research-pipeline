@@ -3,7 +3,7 @@ type: skill
 id: survey-design
 title: Survey Design
 description: "Designing effective surveys with proper question structure, response scales, and bias mitigation"
-tags: [Production, Tested]
+tags: [Production, Tested, design:research, analysis:audience]
 connections:
   - target: llm-service
     type: runs_on

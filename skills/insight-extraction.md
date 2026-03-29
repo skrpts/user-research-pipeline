@@ -3,7 +3,7 @@ type: skill
 id: insight-extraction
 title: Insight Extraction
 description: "Extracting and prioritising actionable insights from qualitative and quantitative research data"
-tags: [Production, Tested]
+tags: [Production, Tested, analysis:qualitative, planning:product, data:quantitative]
 connections:
   - target: llm-service
     type: runs_on

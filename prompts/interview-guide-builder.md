@@ -3,7 +3,7 @@ type: prompt
 id: interview-guide-builder
 title: Interview Guide Builder
 description: "Create a structured interview guide with opening, core, probing, and closing questions"
-tags: [Production]
+tags: [Production, design:research, analysis:audience]
 connections:
   - target: survey-design
     type: derived_from

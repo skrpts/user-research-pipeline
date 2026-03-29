@@ -3,7 +3,7 @@ type: source
 id: user-research-methods
 title: User Research Methods Reference
 description: "Reference guide to user research methodologies, sampling, analysis approaches, and quality standards"
-tags: [Production]
+tags: [Production, design:research, analysis:audience]
 connections: []
 metadata:
   source_type: "reference"

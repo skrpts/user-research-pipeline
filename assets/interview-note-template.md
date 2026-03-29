@@ -3,7 +3,7 @@ type: asset
 id: interview-note-template
 title: Interview Note Template
 description: "Template for structured interview note-taking during user research sessions"
-tags: [Production, Customer-Facing]
+tags: [Production, Customer-Facing, learning:comprehension, design:research]
 connections: []
 metadata:
   asset_type: "template"

@@ -3,7 +3,7 @@ type: asset
 id: research-report-template
 title: Research Report Template
 description: "Template for the final user research insight report"
-tags: [Production, Customer-Facing]
+tags: [Production, Customer-Facing, design:research, analysis:audience]
 connections: []
 metadata:
   asset_type: "template"

@@ -39,6 +39,8 @@ metadata:
   estimated_duration: "25 minutes"
   avg_tokens: 18000
   trigger: manual
+  - target: stakeholder-analysis
+    type: uses
 ---
 
 ## User Research Pipeline

@@ -36,11 +36,11 @@ connections:
   - target: research-report-template
     type: references
   - target: stakeholder-analysis
+    type: uses
 metadata:
   estimated_duration: "25 minutes"
   avg_tokens: 18000
   trigger: manual
-    type: uses
 ---
 
 ## User Research Pipeline

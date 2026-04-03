@@ -35,8 +35,6 @@ connections:
     type: references
   - target: research-report-template
     type: references
-  - target: stakeholder-analysis
-    type: uses
 metadata:
   estimated_duration: "25 minutes"
   avg_tokens: 18000

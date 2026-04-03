@@ -2,7 +2,7 @@ id: "40396286-4e38-4b36-b624-fc4145039a07"
 name: "user-research-pipeline"
 display_name: "User Research Pipeline"
 description: "Plan and synthesise user interviews, surveys, and feedback into actionable insights"
-version: "1.0.5"
+version: "1.1.0"
 engine: ">=1.0.0"
 
 author:
@@ -30,11 +30,11 @@ requires:
     - "survey-responses"
 
 contents:
-  skills: 4
+  skills: 7
   prompts: 5
   workflows: 1
   services: 1
   sources: 1
   documents: 2
   assets: 2
-  total: 16
+  total: 19

@@ -35,6 +35,12 @@ connections:
     type: references
   - target: research-report-template
     type: references
+  - target: evidence-claim-check
+    type: uses
+  - target: pii-masking
+    type: uses
+  - target: dedup-and-merge
+    type: uses
 metadata:
   estimated_duration: "25 minutes"
   avg_tokens: 18000

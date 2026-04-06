@@ -11,16 +11,6 @@ connections:
     type: uses
   - target: insight-extraction
     type: uses
-  - target: research-plan-generator
-    type: uses
-  - target: interview-guide-builder
-    type: uses
-  - target: survey-question-writer
-    type: uses
-  - target: transcript-analyser
-    type: uses
-  - target: insight-report-prompt
-    type: uses
   - target: data-analysis
     type: uses
   - target: llm-service

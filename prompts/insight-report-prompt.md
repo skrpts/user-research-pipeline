@@ -21,11 +21,11 @@ You are a senior user researcher compiling a research insight report for product
 
 ### Input
 
-**Research plan:** {{steps.research-plan-generator.output}}
+**Research plan:** {{steps.Survey Design.output}}
 
 **Research objectives:** Drawn from the research plan above.
 
-**Thematic analysis:** {{steps.transcript-analyser.output}}
+**Thematic analysis:** {{steps.Interview Synthesis.output}}
 
 **Survey results (if applicable):** Included in the thematic analysis above, if applicable.
 

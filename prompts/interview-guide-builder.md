@@ -21,7 +21,7 @@ You are an experienced user researcher creating an interview guide for a semi-st
 
 ### Input
 
-**Research plan:** {{steps.Survey Design.output}}
+**Research plan:** {{steps.previous.output}}
 
 **Research objectives:** Drawn from the research plan above.
 

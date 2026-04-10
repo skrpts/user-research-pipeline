@@ -21,7 +21,7 @@ You are a survey methodologist designing a questionnaire that will produce relia
 
 ### Input
 
-**Research plan:** {{steps.Survey Design.output}}
+**Research plan:** {{steps.previous.output}}
 
 **Research objectives:** Drawn from the research plan above.
 

@@ -4,6 +4,25 @@ id: interview-guide-builder
 title: Interview Guide Builder
 description: "Create a structured interview guide with opening, core, probing, and closing questions"
 tags: [Production, Strategy, Research]
+inputs:
+  interview_duration:
+    label: "Interview Duration"
+    description: "Length of each interview"
+    example: "45 minutes"
+    required: true
+    type: text
+  product_context:
+    label: "Product Context"
+    description: "Context about the product — what it does, who uses it, current state"
+    example: "B2B SaaS platform for project management. 500 active users. Launched 6 months ago."
+    required: true
+    type: text
+  focus_areas:
+    label: "Focus Areas"
+    description: "Areas to focus on"
+    example: "Performance optimisation, user onboarding, API stability"
+    required: true
+    type: text
 connections:
   - target: survey-design
     type: derived_from

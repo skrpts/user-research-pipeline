@@ -4,6 +4,25 @@ id: survey-question-writer
 title: Survey Question Writer
 description: "Write survey questions with proper response scales, bias mitigation, and logical flow"
 tags: [Production, Strategy, Research]
+inputs:
+  survey_type:
+    label: "Survey Type"
+    description: "The type of survey to design"
+    example: "Likert-scale satisfaction survey"
+    required: true
+    type: text
+  max_completion_time:
+    label: "Max Completion Time"
+    description: "Maximum time to complete the task"
+    example: "30 minutes"
+    required: true
+    type: text
+  hypotheses:
+    label: "Hypotheses"
+    description: "Research hypotheses to test"
+    example: "H1: Sleep duration >7h improves test scores. H2: Effect is stronger for STEM subjects."
+    required: true
+    type: text
 connections:
   - target: survey-design
     type: derived_from

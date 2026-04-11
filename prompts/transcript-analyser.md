@@ -4,6 +4,25 @@ id: transcript-analyser
 title: Transcript Analyser
 description: "Analyse interview transcripts for themes, patterns, sentiment, and actionable observations"
 tags: [Production, Data, Research]
+inputs:
+  transcripts:
+    label: "Transcripts"
+    description: "Interview or meeting transcripts"
+    example: "[Paste transcripts here]"
+    required: true
+    type: text
+  interview_count:
+    label: "Number of Interviews"
+    description: "How many interviews to plan for"
+    example: "8"
+    required: true
+    type: text
+  participant_descriptions:
+    label: "Participant Descriptions"
+    description: "Descriptions of the participants"
+    example: "15 participants, 8 female, aged 22-35, all UK-based"
+    required: true
+    type: text
 connections:
   - target: interview-synthesis
     type: derived_from

@@ -4,6 +4,37 @@ id: research-plan-generator
 title: Research Plan Generator
 description: "Generate a structured user research plan with objectives, methodology, participant criteria, and timeline"
 tags: [Production, Research, Audience]
+inputs:
+  research_questions:
+    label: "Research Questions"
+    description: "The research questions guiding the study"
+    example: "RQ1: What factors influence adoption? RQ2: How do outcomes vary by demographic?"
+    required: true
+    type: text
+  product_context:
+    label: "Product Context"
+    description: "Context about the product — what it does, who uses it, current state"
+    example: "B2B SaaS platform for project management. 500 active users. Launched 6 months ago."
+    required: true
+    type: text
+  target_segments:
+    label: "Target Segments"
+    description: "Market segments to target"
+    example: "Enterprise IT, SMB marketing teams, freelance consultants"
+    required: true
+    type: text
+  resources:
+    label: "Resources"
+    description: "Available resources"
+    example: "3 engineers, 1 designer, £20k budget"
+    required: true
+    type: text
+  timeline:
+    label: "Timeline"
+    description: "The project timeline"
+    example: "3 months — April to June 2026"
+    required: true
+    type: text
 connections:
   - target: survey-design
     type: derived_from

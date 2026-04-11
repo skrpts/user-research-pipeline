@@ -4,6 +4,13 @@ id: insight-report-prompt
 title: Insight Report Generator
 description: "Compile research findings into a structured insight report with evidence, confidence levels, and recommendations"
 tags: [Production, Research, Audience]
+inputs:
+  product_context:
+    label: "Product Context"
+    description: "Context about the product — what it does, who uses it, current state"
+    example: "B2B SaaS platform for project management. 500 active users. Launched 6 months ago."
+    required: true
+    type: text
 connections:
   - target: insight-extraction
     type: derived_from

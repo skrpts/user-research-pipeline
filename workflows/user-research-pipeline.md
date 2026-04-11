@@ -35,6 +35,20 @@ metadata:
   estimated_duration: "25 minutes"
   avg_tokens: 18000
   trigger: manual
+execution:
+  - skill: "interview-synthesis"
+  - skill: "survey-design"
+    input_from: "interview-synthesis"
+  - skill: "insight-extraction"
+    input_from: "survey-design"
+  - skill: "data-analysis"
+    input_from: "insight-extraction"
+  - skill: "pii-masking"
+    input_from: "data-analysis"
+  - skill: "dedup-and-merge"
+    input_from: "pii-masking"
+  - skill: "evidence-claim-check"
+    input_from: "dedup-and-merge"
 ---
 
 ## User Research Pipeline

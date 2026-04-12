@@ -37,18 +37,25 @@ metadata:
   trigger: manual
 execution:
   - skill: "interview-synthesis"
+    step_type: "synthesis"
   - skill: "survey-design"
+    step_type: "generation"
     input_from: "interview-synthesis"
   - skill: "insight-extraction"
+    step_type: "synthesis"
     input_from: "survey-design"
   - skill: "data-analysis"
+    step_type: "synthesis"
     input_from: "insight-extraction"
+  - skill: "evidence-claim-check"
+    step_type: "review"
+    input_from: "data-analysis"
   - skill: "pii-masking"
+    step_type: "content"
     input_from: "data-analysis"
   - skill: "dedup-and-merge"
+    step_type: "synthesis"
     input_from: "pii-masking"
-  - skill: "evidence-claim-check"
-    input_from: "dedup-and-merge"
 ---
 
 ## User Research Pipeline

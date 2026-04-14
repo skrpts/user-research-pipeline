@@ -35,6 +35,15 @@ metadata:
   estimated_duration: "25 minutes"
   avg_tokens: 18000
   trigger: manual
+output_step: "insight-extraction"
+composite_steps:
+  - "interview-synthesis"
+  - "survey-design"
+  - "insight-extraction"
+  - "data-analysis"
+  - "evidence-claim-check"
+  - "pii-masking"
+  - "dedup-and-merge"
 execution:
   - skill: "interview-synthesis"
     step_type: "synthesis"

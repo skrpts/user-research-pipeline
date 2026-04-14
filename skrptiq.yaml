@@ -2,7 +2,7 @@ id: "40396286-4e38-4b36-b624-fc4145039a07"
 name: "user-research-pipeline"
 display_name: "User Research Pipeline"
 description: "Plan and synthesise user interviews, surveys, and feedback into actionable insights"
-version: "1.1.10"
+version: "1.1.11"
 engine: ">=1.0.0"
 
 author:
@@ -28,17 +28,6 @@ requires:
     - "user-feedback"
     - "interview-transcripts"
     - "survey-responses"
-
-# --- Output ---
-output_step: "insight-extraction"
-composite_steps:
-  - "interview-synthesis"
-  - "survey-design"
-  - "insight-extraction"
-  - "data-analysis"
-  - "evidence-claim-check"
-  - "pii-masking"
-  - "dedup-and-merge"
 
 contents:
   skills: 7

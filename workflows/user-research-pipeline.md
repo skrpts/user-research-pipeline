@@ -53,13 +53,13 @@ execution:
     step_type: "synthesis"
   - skill: "data-analysis"
     step_type: "synthesis"
+  - skill: "pii-masking"
+    step_type: "content"
   - parallel:
-    - skill: "pii-masking"
-      step_type: "content"
-  - skill: "evidence-claim-check"
-    step_type: "review"
-  - skill: "dedup-and-merge"
-    step_type: "synthesis"
+    - skill: "evidence-claim-check"
+      step_type: "review"
+    - skill: "dedup-and-merge"
+      step_type: "synthesis"
 ---
 
 ## User Research Pipeline

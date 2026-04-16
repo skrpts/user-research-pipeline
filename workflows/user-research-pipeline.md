@@ -53,6 +53,8 @@ execution:
     step_type: "synthesis"
   - skill: "data-analysis"
     step_type: "synthesis"
+    context:
+      analysis_focus: ""
   - skill: "pii-masking"
     step_type: "content"
   - parallel:

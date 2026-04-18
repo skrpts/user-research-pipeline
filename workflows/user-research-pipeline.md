@@ -13,6 +13,8 @@ connections:
     type: uses
   - target: data-analysis
     type: uses
+  - target: language-polish
+    type: uses
   - target: llm-service
     type: runs_on
   - target: user-research-methods
@@ -35,7 +37,7 @@ metadata:
   estimated_duration: "25 minutes"
   avg_tokens: 18000
   trigger: manual
-output_step: "insight-extraction"
+output_step: "language-polish"
 composite_steps:
   - "interview-synthesis"
   - "survey-design"
@@ -49,6 +51,7 @@ execution:
     step_type: "synthesis"
   - skill: "survey-design"
     step_type: "generation"
+    prompt: "research-plan-generator"
   - skill: "insight-extraction"
     step_type: "synthesis"
   - skill: "data-analysis"
@@ -56,6 +59,8 @@ execution:
     context:
       analysis_focus: ""
   - skill: "pii-masking"
+    step_type: "content"
+  - skill: "language-polish"
     step_type: "content"
   - parallel:
     - skill: "evidence-claim-check"

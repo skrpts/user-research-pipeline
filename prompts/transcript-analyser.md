@@ -10,7 +10,8 @@ inputs:
     description: "Interview or meeting transcripts"
     example: "[Paste transcripts here]"
     required: true
-    type: text
+    type: file
+    accept: ".txt,.md,.docx"
   interview_count:
     label: "Number of Interviews"
     description: "How many interviews to plan for"

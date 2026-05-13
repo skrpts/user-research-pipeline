@@ -60,23 +60,23 @@ execution:
     prompt: "analyse-data"
     step_type: "synthesis"
     context:
-      analysis_focus: ""
+      analysis_focus: "General analysis"
   - skill: "pii-masking"
-    step_type: "content"
+    step_type: "local.transform"
   - skill: "language-polish"
     prompt: "polish-language"
     step_type: "content"
     context:
-      voice_profile: ""
-      grammar_strictness: ""
+      voice_profile: "Neutral professional tone"
+      grammar_strictness: "Professional"
   - parallel:
     - skill: "evidence-claim-check"
       prompt: "check-evidence-claims"
       step_type: "review"
       context:
-        evidence_rigour: ""
+        evidence_rigour: "Standard"
     - skill: "dedup-and-merge"
-      step_type: "synthesis"
+      step_type: "local.transform"
 ---
 
 ## User Research Pipeline

@@ -62,6 +62,10 @@ You are a senior user researcher designing a research study. Your plan must be r
 
 **Timeline constraints:** {{input.timeline}}
 
+### Prior Analysis
+
+{{steps.previous.output}}
+
 ### Instructions
 
 Design a thorough research plan that will reliably answer the research questions provided. Work through each section systematically.

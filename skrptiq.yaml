@@ -2,7 +2,7 @@ id: "40396286-4e38-4b36-b624-fc4145039a07"
 name: "user-research-pipeline"
 display_name: "User Research Pipeline"
 description: "Plan and synthesise user interviews, surveys, and feedback into actionable insights"
-version: "1.1.27"
+version: "1.1.28"
 engine: ">=0.1.0"
 
 author:
@@ -76,3 +76,17 @@ contents:
   documents: 2
   assets: 2
   total: 14
+
+security:
+  status: "pass"
+  scanned_at: "2026-07-03T11:11:28.874Z"
+  scanner_version: "3.3.0"
+  syntactic: "pass"
+  structural: "pass"
+  detected:
+    services: ["llm-service"]
+    permissions: []
+    data_handling: ["pii"]
+  undeclared: []
+  warnings: []
+  report_url: "https://hub.skrptiq.ai/skrpts/user-research-pipeline/security"

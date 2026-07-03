@@ -50,22 +50,28 @@ execution:
   - skill: "interview-synthesis"
     prompt: "transcript-analyser"
     step_type: "synthesis"
+    output: { name: "interview_synthesis", type: "text" }
   - skill: "survey-design"
     step_type: "generation"
     prompt: "research-plan-generator"
+    output: { name: "research_plan", type: "text" }
   - skill: "insight-extraction"
     prompt: "insight-report-prompt"
     step_type: "synthesis"
+    output: { name: "insights", type: "text" }
   - skill: "data-analysis"
     prompt: "analyse-data"
     step_type: "synthesis"
+    output: { name: "analysis", type: "text" }
     context:
       analysis_focus: "General analysis"
   - skill: "pii-masking"
     step_type: "local.transform"
+    output: { name: "masked_data", type: "text" }
   - skill: "language-polish"
     prompt: "polish-language"
     step_type: "content"
+    output: { name: "polished_report", type: "text" }
     context:
       voice_profile: "Neutral professional tone"
       grammar_strictness: "Professional"
@@ -73,10 +79,12 @@ execution:
     - skill: "evidence-claim-check"
       prompt: "check-evidence-claims"
       step_type: "review"
+      output: { name: "evidence_report", type: "text" }
       context:
         evidence_rigour: "Standard"
     - skill: "dedup-and-merge"
       step_type: "local.transform"
+      output: { name: "merged_findings", type: "text" }
 ---
 
 ## User Research Pipeline

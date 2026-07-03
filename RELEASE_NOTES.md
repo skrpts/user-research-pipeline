@@ -1,5 +1,8 @@
 # Release Notes
 
+## v1.1.28
+GH#745 — declare per-step `output: {name, type}` on every execution step (interview_synthesis/text, research_plan/text, insights/text, analysis/text, masked_data/text, polished_report/text, evidence_report/text, merged_findings/text). Lights up the #744 rich flow-map. Content-only; no bindings or logic changes.
+
 ## v1.1.27
 GH#645 Row 3b — migrate to K-037 dep-referenced schema. Strip 9 inline shared-content files and declare 9 hub-shared deps (UUID id + slug name + version + checksum from `gen-dep-checksums.mjs`). Closes pre-Step-3 inline-vendoring for this bundle.
 

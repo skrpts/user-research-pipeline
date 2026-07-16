@@ -2,7 +2,7 @@
 type: workflow
 id: user-research-pipeline
 title: User Research Pipeline
-description: "End-to-end workflow for planning, conducting, and synthesising user research into actionable insights"
+description: "End-to-end workflow for planning, conducting, and synthesizing user research into actionable insights"
 tags: [Production, Tested, Research, Audience]
 connections:
   - target: interview-synthesis
@@ -102,7 +102,7 @@ This workflow guides you from a research question through to actionable insights
    - Participant criteria (who to recruit, how many, screening questions)
    - Timeline and logistics (how long the study will take, resources needed)
    - Analysis approach (how findings will be processed)
-3. **Validation gate:** The plan must include clear, answerable research objectives. Vague objectives ("understand user needs") are rejected in favour of specific ones ("identify the top 3 barriers to onboarding completion for new users in their first week").
+3. **Validation gate:** The plan must include clear, answerable research objectives. Vague objectives ("understand user needs") are rejected in favor of specific ones ("identify the top 3 barriers to onboarding completion for new users in their first week").
 
 ### Stage 2: Instrument Design
 
@@ -123,7 +123,7 @@ This stage branches based on the chosen methodology:
 1. Invoke the **survey-question-writer** prompt using the **survey-design** skill.
 2. The prompt generates survey questions with:
    - Proper question types (Likert scales, multiple choice, open-ended)
-   - Response scale design (balanced, labelled, appropriate length)
+   - Response scale design (balanced, labeled, appropriate length)
    - Question ordering (general to specific, non-leading sequencing)
    - Estimated completion time
 3. **Validation gate:** The survey must be completable in under 10 minutes. Questions must be free of leading language, double-barrelling, and assumed knowledge.
@@ -148,7 +148,7 @@ This stage branches based on the chosen methodology:
 
 ### Stage 4: Insight Synthesis
 
-**Input:** Analysed data from Stage 3.
+**Input:** Analyzed data from Stage 3.
 
 1. Invoke the **insight-report-prompt** using the **insight-extraction** skill.
 2. The prompt compiles findings into an insight report using the **research-report-template**:
@@ -174,7 +174,7 @@ This stage branches based on the chosen methodology:
 | `{{input.research_questions}}` | Yes | The research question(s) to investigate | `How do users discover new features after onboarding?` |
 | `{{input.product_context}}` | Yes | Background on the product and its current state | `B2B project management tool, 6 months post-launch` |
 | `{{input.target_segments}}` | Yes | User segments to include in research | `Power users (daily), casual users (weekly), churned users` |
-| `{{input.transcripts}}` | No | Interview transcripts and/or survey responses to analyse | `Paste raw transcripts or survey CSV data` |
+| `{{input.transcripts}}` | No | Interview transcripts and/or survey responses to analyze | `Paste raw transcripts or survey CSV data` |
 | `{{input.resources}}` | No | Available resources for the research | `1 researcher, 2 weeks, access to UserTesting panel` |
 | `{{input.timeline}}` | No | Timeline constraints | `Must be completed within 3 weeks` |
 | `{{input.interview_duration}}` | No | Duration for each interview | `45 minutes` |

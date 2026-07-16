@@ -1,8 +1,8 @@
 id: "40396286-4e38-4b36-b624-fc4145039a07"
 name: "user-research-pipeline"
 display_name: "User Research Pipeline"
-description: "Plan and synthesise user interviews, surveys, and feedback into actionable insights"
-version: "1.1.28"
+description: "Plan and synthesize user interviews, surveys, and feedback into actionable insights"
+version: "1.1.29"
 engine: ">=0.1.0"
 
 author:
@@ -22,32 +22,32 @@ tags:
 dependencies:
   - id: "bf7db12e-60ab-4f4d-8690-ebf51f922f39"
     name: "analyse-data"
-    version: 1.0.1
-    checksum: "sha256:24ba1401b3edbb60cd96826292bd1ae3945bafdf3353a6984af97c5ea572e24c"
+    version: 1.0.3
+    checksum: "sha256:6167c929af86fea2babffa6b3e4745478b16a4ff7a4637e436b9789d8e70993d"
   - id: "35daebca-cb8a-4a74-9f5c-51be5f7327fb"
     name: "check-evidence-claims"
     version: 1.0.1
     checksum: "sha256:ac4b699fc9ce4e0aefbf659ae683e5dfa98048f329cc612ec2dd487818f793af"
   - id: "8c77a144-bc67-4f2e-ac16-d677dc8407b7"
     name: "data-analysis"
-    version: 1.0.1
-    checksum: "sha256:1812f75372270794303edeba7ff8f49a47e43f349370b7d85999b240c1faf1a1"
+    version: 1.0.3
+    checksum: "sha256:897d2fdd4f5e946020cf5d89e950180229cc4328f782acb280dd728f4dd2b584"
   - id: "6190b836-2019-4432-8a3e-95c59160aacb"
     name: "dedup-and-merge"
-    version: 1.0.1
-    checksum: "sha256:61a94a420c57df86b7796941e9e394d311e49793dfdd398b6c3118429da3099d"
+    version: 1.0.3
+    checksum: "sha256:c284f64c162dba746bdf94f6e0b7a44d7e69250be7105d185f2fad2635d05152"
   - id: "540e3a71-056b-4bb0-a09a-013690b63dbb"
     name: "evidence-claim-check"
-    version: 1.0.1
-    checksum: "sha256:bc3d65f4e17152595f01350bce295c1fb6e6d76736af7c941d93ff0b1f2476ef"
+    version: 1.0.3
+    checksum: "sha256:888cef688f0367f4fc93411a85324ed72591029a56a45d61dd312407e8dbe874"
   - id: "3db66b8b-8758-4503-a555-5330f3f9b3d9"
     name: "language-polish"
-    version: 1.0.1
-    checksum: "sha256:ca27d401a2049f5508f0c6d5dc387a2fc4b3b4e61b439d5e8f717b448708b18b"
+    version: 1.0.3
+    checksum: "sha256:efe38bb2b4ba213139299818cc4c7d694270fcfd7ec4d3c738e2170f6394bbd6"
   - id: "fcab9536-a13e-49c9-b0c3-bb3097682e69"
     name: "llm-service"
-    version: 1.0.1
-    checksum: "sha256:455c8bf590a9426d830bffd1a741afa058149bc29c58186c34d0d8699bea4bda"
+    version: 1.0.3
+    checksum: "sha256:18783015383c041de9c3fdaa191b79172ab534348448c20c74f9a967ab4dd917"
   - id: "1bfde5c8-fdb1-4d13-ac87-0076e5b4c561"
     name: "pii-masking"
     version: 1.0.1
@@ -79,7 +79,7 @@ contents:
 
 security:
   status: "pass"
-  scanned_at: "2026-07-03T16:03:25.733Z"
+  scanned_at: "2026-07-16T20:32:23.913Z"
   scanner_version: "3.3.0"
   syntactic: "pass"
   structural: "pass"

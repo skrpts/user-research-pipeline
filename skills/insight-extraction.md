@@ -2,8 +2,8 @@
 type: skill
 id: insight-extraction
 title: Insight Extraction
-description: "Extracting and prioritising actionable insights from qualitative and quantitative research data"
-tags: [Production, Tested, Data, Optimisation]
+description: "Extracting and prioritizing actionable insights from qualitative and quantitative research data"
+tags: [Production, Tested, Data, Optimization]
 connections:
   - target: llm-service
     type: runs_on
@@ -17,11 +17,11 @@ metadata:
 
 ## Insight Extraction
 
-This skill transforms analysed research data — coded themes, survey statistics, sentiment maps — into actionable insights that drive product decisions. It bridges the gap between "what we observed" and "what we should do about it."
+This skill transforms analyzed research data — coded themes, survey statistics, sentiment maps — into actionable insights that drive product decisions. It bridges the gap between "what we observed" and "what we should do about it."
 
 ### Core Capability
 
-Given thematically coded interview data and/or analysed survey responses, this skill produces a prioritised set of insights. Each insight is a statement of what was learned, supported by evidence, assessed for confidence, and paired with a recommended action.
+Given thematically coded interview data and/or analyzed survey responses, this skill produces a prioritized set of insights. Each insight is a statement of what was learned, supported by evidence, assessed for confidence, and paired with a recommended action.
 
 ### What Makes an Insight
 
@@ -38,7 +38,7 @@ Characteristics of a strong insight:
 
 **1. Answer the Research Questions**
 
-Start with the original research objectives. For each objective, identify the findings that directly address it. Synthesise these findings into an insight statement that answers the question.
+Start with the original research objectives. For each objective, identify the findings that directly address it. Synthesize these findings into an insight statement that answers the question.
 
 If a research question cannot be answered with confidence, state this explicitly. "We did not collect sufficient data to answer this question" is a valid and important finding.
 
@@ -63,17 +63,17 @@ Rate each insight on a three-level confidence scale:
 | Medium | Moderate evidence, some inconsistency | 3-4 data points, minor contradictions |
 | Low | Limited evidence, significant uncertainty | 1-2 data points, or contradicting evidence exists |
 
-**5. Prioritise by Impact**
+**5. Prioritize by Impact**
 
 Rank insights by their potential impact on product decisions:
 - **Critical:** Would change the product roadmap or strategy if acted upon
-- **Important:** Would influence feature design or prioritisation
+- **Important:** Would influence feature design or prioritization
 - **Informative:** Adds context but does not require immediate action
 
 ### Recommendation Framework
 
 Each insight should include a recommended action using this structure:
-- **What to do:** A specific, actionable recommendation (not "improve onboarding" but "defer organisation settings to post-first-value and add a guided walkthrough for the core workflow")
+- **What to do:** A specific, actionable recommendation (not "improve onboarding" but "defer organization settings to post-first-value and add a guided walkthrough for the core workflow")
 - **Who should own it:** Which team or role is best positioned to act
 - **Effort estimate:** Relative effort to implement (Small, Medium, Large)
 - **Expected outcome:** What should change if the recommendation is implemented

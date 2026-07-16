@@ -22,7 +22,7 @@ This source document provides the methodological foundation for all research act
 | Structured interviews | Qualitative | Comparing experiences across participants | 8-15 | 2-3 weeks | Medium |
 | Surveys | Quantitative | Measuring attitudes, validating hypotheses | 30-200 | 1-2 weeks | Low |
 | Usability testing | Mixed | Evaluating specific interactions | 5-8 | 1-2 weeks | Medium |
-| Diary studies | Qualitative | Understanding longitudinal behaviour | 8-15 | 2-4 weeks | High |
+| Diary studies | Qualitative | Understanding longitudinal behavior | 8-15 | 2-4 weeks | High |
 | Card sorting | Quantitative | Information architecture, mental models | 15-30 | 1 week | Low |
 | A/B testing | Quantitative | Comparing specific design variants | 100+ per variant | 1-4 weeks | Low |
 | Contextual inquiry | Qualitative | Understanding real-world work practices | 4-8 | 2-3 weeks | High |
@@ -56,7 +56,7 @@ When combining qualitative and quantitative methods:
 
 This pipeline uses a six-phase thematic analysis approach:
 
-1. **Familiarisation:** Read all data before coding
+1. **Familiarization:** Read all data before coding
 2. **Initial coding:** Generate codes from the data (not from a pre-determined framework)
 3. **Theme search:** Group codes into candidate themes
 4. **Theme review:** Check themes against the data set — do they hold up?
@@ -83,6 +83,6 @@ All research conducted through this pipeline must adhere to:
 - Informed consent: Participants understand what they are agreeing to
 - Voluntary participation: Participants can withdraw at any time without consequence
 - Confidentiality: Personal data is protected and findings are anonymised
-- Data minimisation: Collect only what is needed for the research objectives
+- Data minimization: Collect only what is needed for the research objectives
 - Secure storage: Data is stored securely and deleted when no longer needed
 - No deception: Participants are told the true purpose of the research

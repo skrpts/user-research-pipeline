@@ -91,7 +91,7 @@ Recommend the most appropriate research method(s) and justify your choice:
 | Semi-structured interviews | Exploring motivations, pain points, mental models | 5-12 participants | 2-3 weeks |
 | Surveys | Measuring attitudes, quantifying preferences, validating hypotheses | 30-200 respondents | 1-2 weeks |
 | Usability testing | Evaluating specific workflows, identifying interaction problems | 5-8 participants | 1-2 weeks |
-| Diary studies | Understanding longitudinal behaviour, daily workflows | 8-15 participants | 2-4 weeks |
+| Diary studies | Understanding longitudinal behavior, daily workflows | 8-15 participants | 2-4 weeks |
 | Card sorting | Understanding mental models, information architecture | 15-30 participants | 1 week |
 
 If recommending interviews, specify: structured, semi-structured, or unstructured — and why.
@@ -128,13 +128,13 @@ Include:
 - Recruitment start and close dates
 - Session scheduling approach
 - Tools needed (video conferencing, survey platform, transcription service)
-- Team roles (who moderates, who takes notes, who analyses)
+- Team roles (who moderates, who takes notes, who analyzes)
 
 **6. Analysis Approach**
 
-Describe how the collected data will be analysed:
+Describe how the collected data will be analyzed:
 - For interviews: thematic coding method, who will code, whether inter-rater reliability will be assessed
-- For surveys: which statistical analyses will be run, how open-ended responses will be coded
+- For surveys: which statistical analyzes will be run, how open-ended responses will be coded
 - Expected deliverables and their format
 
 **7. Ethical Considerations**

@@ -14,7 +14,7 @@ metadata:
 
 ## Research Repository Guide
 
-A research repository is where your organisation's user research lives after the study is complete. Without one, teams repeat studies, lose insights, and fail to build on previous findings. This guide explains how to set up and maintain a useful research repository.
+A research repository is where your organization's user research lives after the study is complete. Without one, teams repeat studies, lose insights, and fail to build on previous findings. This guide explains how to set up and maintain a useful research repository.
 
 ### Why a Research Repository Matters
 
@@ -32,7 +32,7 @@ A research repository is where your organisation's user research lives after the
 
 ### Repository Structure
 
-Organise entries by study, with each study containing:
+Organize entries by study, with each study containing:
 
 **1. Study Metadata**
 - Study title (descriptive, searchable)
@@ -122,5 +122,5 @@ The repository is only as useful as its searchability. Ensure:
 1. **Over-engineering the system.** A spreadsheet with consistent formatting is better than an elaborate tool that nobody uses. Start simple.
 2. **Under-tagging.** If entries have only 1-2 tags, they will not surface in searches. Aim for 4-6 tags per entry.
 3. **Insight rot.** Insights from 2 years ago may not reflect current reality. Flag dated insights and recommend refreshes.
-4. **Access restrictions.** If only the research team can access the repository, the rest of the organisation will not use it. Make it widely readable with raw data access restricted.
+4. **Access restrictions.** If only the research team can access the repository, the rest of the organization will not use it. Make it widely readable with raw data access restricted.
 5. **No feedback loop.** If insights are added but never actioned, the repository becomes a graveyard. Track insight status and hold teams accountable for acting on findings.

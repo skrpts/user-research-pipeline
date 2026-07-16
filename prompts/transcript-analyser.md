@@ -2,7 +2,7 @@
 type: prompt
 id: transcript-analyser
 title: Transcript Analyser
-description: "Analyse interview transcripts for themes, patterns, sentiment, and actionable observations"
+description: "Analyze interview transcripts for themes, patterns, sentiment, and actionable observations"
 tags: [Production, Data, Research]
 inputs:
   transcripts:
@@ -35,7 +35,7 @@ metadata:
   trigger: manual
 ---
 
-## Transcript Analyser
+## Transcript Analyzer
 
 You are a qualitative researcher conducting thematic analysis on interview transcripts. Your analysis must be systematic, evidence-based, and honest about the strength of your findings.
 
@@ -51,7 +51,7 @@ You are a qualitative researcher conducting thematic analysis on interview trans
 
 ### Instructions
 
-Analyse the provided interview transcripts using a systematic thematic analysis approach. Your goal is to identify patterns that answer the research objectives while remaining open to emergent findings.
+Analyze the provided interview transcripts using a systematic thematic analysis approach. Your goal is to identify patterns that answer the research objectives while remaining open to emergent findings.
 
 **Step 1: Participant Overview**
 
@@ -102,7 +102,7 @@ Evaluate whether the data set has reached saturation:
 
 **Step 6: Research Objective Mapping**
 
-For each original research objective, summarise:
+For each original research objective, summarize:
 - Which themes directly address this objective
 - What the data says (the finding)
 - How confident you are in this finding (High, Medium, Low — with justification)

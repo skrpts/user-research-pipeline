@@ -20,7 +20,7 @@ inputs:
   focus_areas:
     label: "Focus Areas"
     description: "Areas to focus on"
-    example: "Performance optimisation, user onboarding, API stability"
+    example: "Performance optimization, user onboarding, API stability"
     required: true
     type: text
 connections:
@@ -83,7 +83,7 @@ Examples of good opening questions:
 
 For each research objective, write 2-3 core questions. Each core question should:
 - Be open-ended (cannot be answered with yes/no)
-- Focus on behaviour and experience rather than opinions ("Tell me about a time when..." rather than "Do you think...")
+- Focus on behavior and experience rather than opinions ("Tell me about a time when..." rather than "Do you think...")
 - Avoid leading language (not "How frustrating is it when..." but "How do you feel when...")
 - Be sequenced from broad to specific
 
@@ -113,7 +113,7 @@ Standard closers:
 **Section 5: Moderator Notes**
 
 Include practical guidance for the moderator:
-- Key topics to prioritise if time runs short
+- Key topics to prioritize if time runs short
 - Topics to handle sensitively (if any)
 - Specific terminology to listen for
 - Signals that the participant may need encouragement or redirection

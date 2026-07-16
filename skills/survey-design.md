@@ -32,7 +32,7 @@ Example: "I can easily find the features I need" — Strongly Disagree to Strong
 Rules: Always include a neutral midpoint. Label all scale points, not just endpoints. Use consistent direction (positive to negative or vice versa, but never mix within a survey).
 
 **Multiple Choice Questions**
-Use for: Categorisation, behaviour frequency, preference ranking
+Use for: Categorization, behavior frequency, preference ranking
 Format: Question + exhaustive, mutually exclusive options
 Rules: Include "Other (please specify)" when the option set may not be exhaustive. Limit to 7 options maximum. Randomise option order where possible to avoid primacy/recency bias.
 

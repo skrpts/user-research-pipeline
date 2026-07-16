@@ -62,12 +62,12 @@ Every research participant must provide informed consent before any data is coll
 
 **Special considerations:**
 - If the research involves participants under 18, parental or guardian consent is required
-- If the research involves employees of the organisation, ensure participation is genuinely voluntary and not perceived as a workplace requirement
+- If the research involves employees of the organization, ensure participation is genuinely voluntary and not perceived as a workplace requirement
 - If the research involves sensitive topics, provide advance notice so participants can make an informed decision
 
 ### Data Privacy and Handling
 
-**Data minimisation:** Collect only the data you need. If demographic information is not required for the analysis, do not collect it.
+**Data minimization:** Collect only the data you need. If demographic information is not required for the analysis, do not collect it.
 
 **Anonymisation:**
 - Replace participant names with IDs (P1, P2, etc.) in all analysis documents

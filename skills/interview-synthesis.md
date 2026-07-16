@@ -2,7 +2,7 @@
 type: skill
 id: interview-synthesis
 title: Interview Synthesis
-description: "Synthesising qualitative interview data into structured insights through thematic coding and pattern recognition"
+description: "Synthesizing qualitative interview data into structured insights through thematic coding and pattern recognition"
 tags: [Production, Tested, Data, Research]
 connections:
   - target: llm-service
@@ -27,14 +27,14 @@ Given a set of interview transcripts or notes, this skill produces a structured 
 
 The synthesis follows a rigorous five-step process:
 
-**1. Familiarisation**
+**1. Familiarization**
 
-Read through all transcripts or notes without coding. Note initial impressions, recurring phrases, emotional moments, and surprising statements. This step prevents premature categorisation and ensures the analysis is grounded in the full data set.
+Read through all transcripts or notes without coding. Note initial impressions, recurring phrases, emotional moments, and surprising statements. This step prevents premature categorization and ensures the analysis is grounded in the full data set.
 
 **2. Initial Coding**
 
 Work through each transcript line by line, assigning descriptive codes to meaningful segments. Codes should be:
-- **Descriptive:** Summarise the content ("onboarding frustration", "pricing confusion", "feature discovery")
+- **Descriptive:** Summarize the content ("onboarding frustration", "pricing confusion", "feature discovery")
 - **In-vivo where possible:** Use the participant's own language when it captures the meaning well
 - **Granular:** Prefer specific codes over broad ones. "Cannot find search function" is better than "usability issue"
 - **Consistent:** Apply the same code to similar segments across different transcripts

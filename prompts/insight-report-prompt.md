@@ -42,7 +42,7 @@ You are a senior user researcher compiling a research insight report for product
 
 ### Instructions
 
-Using the research-report-template, compile the analysed data into a complete insight report. Follow these section guidelines.
+Using the research-report-template, compile the analyzed data into a complete insight report. Follow these section guidelines.
 
 **Executive Summary**
 
@@ -74,7 +74,7 @@ For each insight (aim for 5-8 total), present an insight card:
 - **Supporting evidence:**
   - [Quantitative data point or statistic, if available]
   - [Quote from participant] — P[X]
-  - [Observed pattern or behaviour]
+  - [Observed pattern or behavior]
 - **Implication:** What this means for the product (1-2 sentences)
 - **Recommendation:** Specific action to take based on this insight
   - **Action:** What to do
@@ -111,7 +111,7 @@ List questions that the research raised but could not answer:
 
 **Recommendations Summary**
 
-Consolidate all recommendations into a prioritised action list:
+Consolidate all recommendations into a prioritized action list:
 
 | # | Recommendation | Insight | Effort | Impact | Priority |
 |---|---------------|---------|--------|--------|----------|

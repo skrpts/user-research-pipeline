@@ -23,6 +23,11 @@ inputs:
     example: "H1: Sleep duration >7h improves test scores. H2: Effect is stronger for STEM subjects."
     required: true
     type: text
+context_params:
+  research_plan:
+    label: "Research Plan"
+    description: "The research plan the survey derives from — objectives, participant criteria, and hypotheses."
+    required: false
 connections:
   - target: survey-design
     type: derived_from
@@ -40,7 +45,7 @@ You are a survey methodologist designing a questionnaire that will produce relia
 
 ### Input
 
-**Research plan:** {{steps.previous.output}}
+**Research plan:** {{step.context.research_plan}}
 
 **Research objectives:** Drawn from the research plan above.
 

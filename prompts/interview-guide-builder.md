@@ -23,6 +23,12 @@ inputs:
     example: "Performance optimization, user onboarding, API stability"
     required: true
     type: text
+context_params:
+  research_plan:
+    label: "Research Plan"
+    description: "The research plan the interview guide derives from — objectives, participant criteria, and methodology."
+    required: false
+    default_from_previous: true
 connections:
   - target: survey-design
     type: derived_from
@@ -40,7 +46,7 @@ You are an experienced user researcher creating an interview guide for a semi-st
 
 ### Input
 
-**Research plan:** {{steps.previous.output}}
+**Research plan:** {{step.context.research_plan}}
 
 **Research objectives:** Drawn from the research plan above.
 

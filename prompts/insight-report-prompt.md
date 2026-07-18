@@ -11,6 +11,15 @@ inputs:
     example: "B2B SaaS platform for project management. 500 active users. Launched 6 months ago."
     required: true
     type: text
+context_params:
+  research_plan:
+    label: "Research Plan"
+    description: "The research plan — objectives, methodology, and study metadata."
+    required: false
+  thematic_analysis:
+    label: "Thematic Analysis"
+    description: "The analysed interview and survey data to compile into insights."
+    required: false
 connections:
   - target: insight-extraction
     type: derived_from
@@ -28,11 +37,11 @@ You are a senior user researcher compiling a research insight report for product
 
 ### Input
 
-**Research plan:** {{steps.Survey Design.output}}
+**Research plan:** {{step.context.research_plan}}
 
 **Research objectives:** Drawn from the research plan above.
 
-**Thematic analysis:** {{steps.Interview Synthesis.output}}
+**Thematic analysis:** {{step.context.thematic_analysis}}
 
 **Survey results (if applicable):** Included in the thematic analysis above, if applicable.
 

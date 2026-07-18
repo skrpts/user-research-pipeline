@@ -9,6 +9,10 @@ connections:
     type: uses
   - target: survey-design
     type: uses
+  - target: interview-guide-design
+    type: uses
+  - target: survey-question-design
+    type: uses
   - target: insight-extraction
     type: uses
   - target: data-analysis
@@ -41,6 +45,8 @@ output_step: "language-polish"
 composite_steps:
   - "interview-synthesis"
   - "survey-design"
+  - "interview-guide-design"
+  - "survey-question-design"
   - "insight-extraction"
   - "data-analysis"
   - "evidence-claim-check"
@@ -55,10 +61,33 @@ execution:
     step_type: "generation"
     prompt: "research-plan-generator"
     output: { name: "research_plan", type: "text" }
+  - skill: "interview-guide-design"
+    prompt: "interview-guide-builder"
+    step_type: "generation"
+    output: { name: "interview_guide", type: "text" }
+    bindings:
+      research_plan:
+        from_step: "Survey Design"
+        field: output
+  - skill: "survey-question-design"
+    prompt: "survey-question-writer"
+    step_type: "generation"
+    output: { name: "survey_questions", type: "text" }
+    bindings:
+      research_plan:
+        from_step: "Survey Design"
+        field: output
   - skill: "insight-extraction"
     prompt: "insight-report-prompt"
     step_type: "synthesis"
     output: { name: "insights", type: "text" }
+    bindings:
+      research_plan:
+        from_step: "Survey Design"
+        field: output
+      thematic_analysis:
+        from_step: "Interview Synthesis"
+        field: output
   - skill: "data-analysis"
     prompt: "analyse-data"
     step_type: "synthesis"
@@ -75,6 +104,10 @@ execution:
     context:
       voice_profile: "Neutral professional tone"
       grammar_strictness: "Professional"
+    bindings:
+      source:
+        from_step: "Insight Extraction"
+        field: output
   - parallel:
     - skill: "evidence-claim-check"
       prompt: "check-evidence-claims"
@@ -108,10 +141,10 @@ This workflow guides you from a research question through to actionable insights
 
 **Input:** The research plan from Stage 1.
 
-This stage branches based on the chosen methodology:
+Both research instruments derive from the research plan and are generated in sequence, so the pipeline produces a complete set of instruments regardless of the chosen methodology. Teams running interviews only, surveys only, or a mixed-methods study take the instrument they need.
 
-**Path A: Interview Guide (if methodology includes interviews)**
-1. Invoke the **interview-guide-builder** prompt using the **survey-design** skill.
+**Step 1: Interview Guide**
+1. Invoke the **interview-guide-builder** prompt using the **interview-guide-design** skill, bound to the research plan from Stage 1.
 2. The prompt generates a structured interview guide with:
    - Opening questions (rapport building, background)
    - Core questions (directly addressing research objectives)
@@ -119,16 +152,14 @@ This stage branches based on the chosen methodology:
    - Closing questions (anything else, future contact)
 3. **Validation gate:** Each research objective must be addressed by at least 2 core questions. Probing questions must be ready for predictable shallow responses.
 
-**Path B: Survey Design (if methodology includes surveys)**
-1. Invoke the **survey-question-writer** prompt using the **survey-design** skill.
+**Step 2: Survey Questions**
+1. Invoke the **survey-question-writer** prompt using the **survey-question-design** skill, bound to the research plan from Stage 1.
 2. The prompt generates survey questions with:
    - Proper question types (Likert scales, multiple choice, open-ended)
    - Response scale design (balanced, labeled, appropriate length)
    - Question ordering (general to specific, non-leading sequencing)
    - Estimated completion time
 3. **Validation gate:** The survey must be completable in under 10 minutes. Questions must be free of leading language, double-barrelling, and assumed knowledge.
-
-**Path C: Both** — run Path A and Path B sequentially.
 
 ### Stage 3: Data Analysis
 
